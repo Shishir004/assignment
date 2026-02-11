@@ -25,7 +25,7 @@ st.set_page_config(
 # ---------------- API KEY ---------------- #
 
 # For local use:
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
 
 if not OPENROUTER_API_KEY:
     st.error("OpenRouter API key not found. Set OPENROUTER_API_KEY in environment.")
